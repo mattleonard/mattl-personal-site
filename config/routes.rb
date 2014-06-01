@@ -11,6 +11,7 @@ Rails.application.routes.draw do
     root to: 'posts#index'
 
     resources :posts
+    resources :about_mes
   end
 
   # Example of regular route:
