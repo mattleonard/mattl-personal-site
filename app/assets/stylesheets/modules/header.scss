@@ -1,0 +1,14 @@
+.header-brand {
+  font-size: 72px;
+  font-family: 'Montserrat-Bold', sans-serif;
+}
+
+.header-links {
+  margin-top: 26px;
+  text-transform: uppercase;
+
+  a:hover {
+    text-decoration: underline !important;
+    background: none !important;
+  }
+}
