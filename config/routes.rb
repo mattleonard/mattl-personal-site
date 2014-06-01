@@ -12,6 +12,7 @@ Rails.application.routes.draw do
 
     resources :posts
     resources :about_mes
+    resources :portfolios
   end
 
   # Example of regular route:
