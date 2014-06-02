@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20140601082827) do
     t.string   "subtitle"
     t.text     "description"
     t.string   "photo"
-    t.string   "type"
+    t.string   "section_type"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -4,7 +4,6 @@ CarrierWave.configure do |config|
   config.storage    = :aws
   config.aws_bucket = 'turbo_soul'
   config.aws_acl    = :public_read
-  config.asset_host = 'http://turbosoul.com'
   config.aws_authenticated_url_expiration = 60 * 60 * 24 * 365
 
   config.aws_credentials = {

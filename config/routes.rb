@@ -1,11 +1,15 @@
 Rails.application.routes.draw do
 
   devise_for :users
+
+  resources :posts
+  resources :about_mes
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'public#blog'
+  root 'posts#index'
 
   namespace :admin do
     root to: 'posts#index'

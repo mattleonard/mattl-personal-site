@@ -13,7 +13,7 @@
     <% @about_mes.each do |about_me| %>
       <tr>
         <td><%= about_me.title %></td>
-        <td><%= about_me.type %></td>
+        <td><%= about_me.section_type %></td>
         <td><%= link_to 'Show', [:admin, about_me] %></td>
         <td><%= link_to 'Edit', edit_admin_about_me_path(about_me) %></td>
         <td><%= link_to 'Destroy', [:admin, about_me], method: :delete, data: { confirm: 'Are you sure?' } %></td>

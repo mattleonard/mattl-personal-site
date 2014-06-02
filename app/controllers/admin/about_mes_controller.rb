@@ -58,6 +58,6 @@ class Admin::AboutMesController < AdminController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def about_me_params
-      params.require(:about_me).permit(:title, :subtitle, :description, :photo, :type)
+      params.require(:about_me).permit(:title, :subtitle, :description, :photo, :section_type)
     end
 end

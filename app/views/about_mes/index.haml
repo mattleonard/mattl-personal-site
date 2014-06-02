@@ -1,0 +1,23 @@
+%div.about-main-image= image_tag '/images/biking.jpg'
+
+%h1.about-tag-line= "Names Leonard, Matt Leonard"
+
+%p= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae neque vitae diam fermentum lobortis. Nulla massa orci, semper vulputate hendrerit a, fermentum non neque. Mauris quam mi, rutrum eget arcu a, sodales dapibus sem. Vivamus consequat rutrum massa nec viverra. Cras ac mattis arcu."
+
+%h1.about-title= "Professional Experience"
+
+.about-section
+  - @professional.each do |professional|
+    .container= render partial: 'text_item', locals: {portfolio: professional}
+
+%h1.about-title= "Side Projects"
+
+.about-section
+  - @projects.each do |project|
+    .container= render partial: 'text_item', locals: {portfolio: project}
+
+%h1.about-title= "Hobbies"
+
+.about-section
+  - @hobbies.each do |hobby|
+    =  render partial: 'picture_item', locals:{portfolio: hobby}

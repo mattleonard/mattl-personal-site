@@ -5,7 +5,7 @@ class CreateAboutMes < ActiveRecord::Migration
       t.string :subtitle
       t.text :description
       t.string :photo
-      t.string :type
+      t.string :section_type
 
       t.timestamps
     end
