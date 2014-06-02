@@ -1,0 +1,4 @@
+.col-md-6
+  .portfolio-img= image_tag portfolio.photo_url
+  %h3.portfolio-title= link_to(portfolio.title, portfolio_path(portfolio))
+  %p= portfolio.description

@@ -1,5 +1,20 @@
-.portfolio {}
-.portfolio-img {
-  margin-top: 20px;
-  img { width: 100%; }
+.portfolio-main-image img {
+  width: 100%;
+}
+
+.portfolio-tag-line {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.portfolio-title {
+  text-transform: uppercase;
+}
+
+.portfolio-section {
+  margin-bottom: 24px;
+}
+
+.portfolio-img img {
+  width: 100%;
 }
