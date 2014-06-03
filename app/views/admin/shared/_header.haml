@@ -5,3 +5,4 @@
     %li= link_to "About Me", admin_about_mes_path
     %li= link_to "Portfolio", admin_portfolios_path
     %li= link_to "Let's Chat", ''
+    %li= link_to('Logout', destroy_user_session_path, :method => :delete)
