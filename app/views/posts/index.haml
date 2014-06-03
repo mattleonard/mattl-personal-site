@@ -1,5 +1,0 @@
-- @posts.each do |post|
-  %div.post-image= link_to image_tag post.photo_url
-  %h1.post-title= link_to(post.title, post_path(post))
-  %p.post-body= truncate(post.body, omission: '...' ,length: 250)
-  %p.post-more= link_to "Continue >", post_path(post)

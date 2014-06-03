@@ -2,7 +2,6 @@ Rails.application.routes.draw do
 
   devise_for :users
 
-  resources :posts
   resources :about_mes
   resources :portfolios
 
@@ -10,12 +9,11 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'posts#index'
+  root 'about_mes#index'
 
   namespace :admin do
-    root to: 'posts#index'
+    root to: 'about_mes#index'
 
-    resources :posts
     resources :about_mes
     resources :portfolios
   end
