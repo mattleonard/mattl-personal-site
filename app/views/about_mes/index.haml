@@ -23,5 +23,7 @@
     %h1.about-title= "Hobbies"
 
     .about-section
-      - @hobbies.each do |hobby|
-        =  render partial: 'picture_item', locals:{portfolio: hobby}
+      - @hobbies.each_slice(2) do |hobbies|
+        .container
+          =  render partial: 'picture_item', locals:{portfolio: hobbies[0]} if hobbies[0]
+          =  render partial: 'picture_item', locals:{portfolio: hobbies[1]} if hobbies[1]

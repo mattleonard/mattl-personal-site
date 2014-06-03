@@ -5,3 +5,9 @@
 .about-mes-item-p {
   font-size: 1.3em;
 }
+
+.about-mes-pic-img {
+  max-height: 360px;
+  overflow: hidden;
+  img { width: 100%; }
+}
