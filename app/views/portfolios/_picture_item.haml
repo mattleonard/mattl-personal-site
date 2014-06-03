@@ -1,4 +1,4 @@
 .col-md-6
   .portfolio-img= image_tag portfolio.photo_url
   %h3.portfolio-title= link_to(portfolio.title, portfolio_path(portfolio))
-  %p.portfolio-item-p= portfolio.description
+  %p.portfolio-item-p= truncate(portfolio.description.html_safe, length: 250)
