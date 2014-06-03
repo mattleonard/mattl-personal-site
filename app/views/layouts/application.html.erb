@@ -8,18 +8,18 @@
 </head>
 <body>
 
-  <section class="container">
-    <header>
+  <header>
+    <div class="container">
       <%= render partial: 'shared/header' %>
-    </header>
+    </div>
+  </header>
 
-    <% if notice or alert %>
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
-    <% end %>
+  <% if notice or alert %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+  <% end %>
 
-    <%= yield %>
-  </section>
+  <%= yield %>
 
 </body>
 </html>

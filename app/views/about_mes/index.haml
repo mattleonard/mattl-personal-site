@@ -2,22 +2,26 @@
 
 %h1.about-tag-line= "Names Leonard, Matt Leonard"
 
-%p.about-p= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae neque vitae diam fermentum lobortis. Nulla massa orci, semper vulputate hendrerit a, fermentum non neque. Mauris quam mi, rutrum eget arcu a, sodales dapibus sem. Vivamus consequat rutrum massa nec viverra. Cras ac mattis arcu."
+.container
+  .col-md-10.col-md-offset-1
+    %p.about-p= "I’m Matt Leonard and I love building complex and beautiful Rails On Ruby web apps. Currently, I am a senior majoring in Software Engineering at the University of Colorado at Boulder"
 
-%h1.about-title= "Professional Experience"
+    %p.about-p= "While not in classes, I am working as Ruby On Rails Developer at Invited Home LLC, a vacation rental startup located in Boulder, CO. Since working here for the last year, I have done everything from migrate 60,000 records from a SQL to Postgresql database to creating relational complex models and controllers to recreating the public facing front-end of the website using HTML5/CSS/jQuery."
 
-.about-section
-  - @professional.each do |professional|
-    .container= render partial: 'text_item', locals: {portfolio: professional}
+    %h1.about-title= "Professional Experience"
 
-%h1.about-title= "Side Projects"
+    .about-section
+      - @professional.each do |professional|
+        = render partial: 'text_item', locals: {portfolio: professional}
 
-.about-section
-  - @projects.each do |project|
-    .container= render partial: 'text_item', locals: {portfolio: project}
+    %h1.about-title= "Side Projects"
 
-%h1.about-title= "Hobbies"
+    .about-section
+      - @projects.each do |project|
+        = render partial: 'text_item', locals: {portfolio: project}
 
-.about-section
-  - @hobbies.each do |hobby|
-    =  render partial: 'picture_item', locals:{portfolio: hobby}
+    %h1.about-title= "Hobbies"
+
+    .about-section
+      - @hobbies.each do |hobby|
+        =  render partial: 'picture_item', locals:{portfolio: hobby}

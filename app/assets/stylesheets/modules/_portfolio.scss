@@ -1,5 +1,9 @@
-.portfolio-main-image img {
-  width: 100%;
+.portfolio-main-image {
+  max-height: 600px;
+  overflow: hidden;
+  img {
+    width: 100%;
+  }
 }
 
 .portfolio-tag-line {
@@ -13,7 +17,6 @@
 
 .portfolio-p {
   margin-bottom: 40px;
-  text-align: center;
   font-size: 1.6em;
 }
 
