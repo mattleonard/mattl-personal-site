@@ -6,5 +6,7 @@
   .col-md-10.col-md-offset-1
     %p.portfolio-p= "I am always looking for new projects to work on. If you have a startup idea that needs some coding, I would love to contribute pro bono. Also if you have any Ruby on Rails question feel free to shoot them my way."
 
-- @portfolios.each do |portfolio|
-  .container= render partial: 'picture_item', locals: {portfolio: portfolio}
+- @portfolios.each_slice(2) do |portfolios|
+  .container
+    = render partial: 'picture_item', locals: {portfolio: portfolios[0]} if portfolios[0]
+    = render partial: 'picture_item', locals: {portfolio: portfolios[1]} if portfolios[1]
