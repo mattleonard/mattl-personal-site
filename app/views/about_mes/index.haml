@@ -24,6 +24,6 @@
 
     .about-section
       - @hobbies.each_slice(2) do |hobbies|
-        .container
+        .container-fluid
           =  render partial: 'picture_item', locals:{portfolio: hobbies[0]} if hobbies[0]
           =  render partial: 'picture_item', locals:{portfolio: hobbies[1]} if hobbies[1]
