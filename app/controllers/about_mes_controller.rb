@@ -4,7 +4,6 @@ class AboutMesController < ApplicationController
   # GET /about_mes
   def index
     @professional = AboutMe.professional
-    @projects = AboutMe.projects
     @hobbies = AboutMe.hobbies
   end
 

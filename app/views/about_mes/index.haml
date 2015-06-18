@@ -1,24 +1,22 @@
-%div.about-main-image= image_tag '/images/biking.jpg'
+%div.about-main-image= image_tag '/images/stoked-matt-leonard.jpg'
 
 %h1.about-tag-line= "Name's Leonard, Matt Leonard"
 
 .container
   .col-md-10.col-md-offset-1
-    %p.about-p= "I’m Matt Leonard and I love building complex and beautiful Ruby On Rails web apps. I’m currently a senior software engineering major at the University of Colorado"
+    %p.about-p= "Hey, I’m Matt Leonard and I love building great software. I recently graduated from CU Boulder with a degree in software engineering."
 
-    %p.about-p= "While not in classes, I am working as Ruby On Rails Developer at Invited Home LLC, a vacation rental startup located in Boulder, CO. Since working here for the last year, I have done everything from migrate 60,000 records from a SQL to Postgresql database to creating relational complex models and controllers to recreating the public facing front-end of the website using HTML5/CSS/jQuery."
+    %p.about-p= "During my time at CU I worked as a Ruby on Rails developer for two startups, Kapost and InvitedHome. At these companies I was able to learn everything from migrating data between MySQL and Postgres to building my own front-end frameworks. Using my knowledge I also built an automated bike shop, Shift Suppliers LLC,  and a music streaming site, Mvisc."
+
+    %p.about-p= "I’ve most recently begun exploring Meteor.js and other JavaScript frameworks, while still continuing to grow as a RoR developer."
+
+    %p.about-p= "When I’m not crunching code, you’ll find me at Whistler downhill mountain biking, shredding fresh snow in the Rockies, scuba diving in the caribbean or road tripping across the country."
 
     %h1.about-title= "Professional Experience"
 
     .about-section
       - @professional.each do |professional|
         = render partial: 'text_item', locals: {portfolio: professional}
-
-    %h1.about-title= "Side Projects"
-
-    .about-section
-      - @projects.each do |project|
-        = render partial: 'text_item', locals: {portfolio: project}
 
     %h1.about-title= "Hobbies"
 
