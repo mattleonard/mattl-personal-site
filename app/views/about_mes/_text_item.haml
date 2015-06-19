@@ -1,7 +1,7 @@
-.about-mes-item
+.about-mes-item.row
   .col-md-2
     .about-mes-item-img= image_tag portfolio.photo_url
   .col-md-10
     %h3.about-mes-item-title= portfolio.title
     %h5.about-mes-item-subtitle= portfolio.subtitle
-    %p.about-mes-item-p= portfolio.description
+    %p.about-mes-item-p= portfolio.description.html_safe

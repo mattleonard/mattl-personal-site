@@ -9,6 +9,7 @@
 .portfolio-tag-line {
   text-transform: uppercase;
   text-align: center;
+  padding: 14px;
 }
 
 .portfolio-title {
@@ -33,8 +34,6 @@
 }
 
 .portfolio-img-box {
-  height: 300px;
-  overflow: hidden;
   img {
     width: 100%;
   }

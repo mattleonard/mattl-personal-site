@@ -6,10 +6,6 @@ class Admin::PortfoliosController < AdminController
     @portfolios = Portfolio.all
   end
 
-  # GET /portfolios/1
-  def show
-  end
-
   # GET /portfolios/new
   def new
     @portfolio = Portfolio.new
@@ -24,7 +20,7 @@ class Admin::PortfoliosController < AdminController
     @portfolio = Portfolio.new(portfolio_params)
 
     if @portfolio.save
-      redirect_to @portfolio, notice: 'Portfolio was successfully created.'
+      redirect_to [:admin, @portfolio], notice: 'Portfolio was successfully created.'
     else
       render :new
     end
@@ -33,7 +29,7 @@ class Admin::PortfoliosController < AdminController
   # PATCH/PUT /portfolios/1
   def update
     if @portfolio.update(portfolio_params)
-      redirect_to @portfolio, notice: 'Portfolio was successfully updated.'
+      redirect_to [:admin, @portfolio], notice: 'Portfolio was successfully updated.'
     else
       render :edit
     end
